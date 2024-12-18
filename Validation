@@ -1,0 +1,23 @@
+function validate(e) {
+    e.preventDefault();
+
+    const email = getElementById('email').value;
+    const pass = getElementById('pass').value;
+    const age = getElementById('age').value;
+    const msgBox = getElementById('message').value;
+    let message = '';
+    if (email === ''){
+        message = 'Enter an email.';
+        msgBox.style.color = 'red';
+    } else if (pass === ''){
+        message = 'Enter an password.';
+        msgBox.style.color = 'red  
+    } else if (age === '') {
+        message = 'Enter an age.';
+        msgBox.style.color = 'red  
+    } else {
+        message = 'Login Successful';
+        msgBox.style.color = 'green  
+    }
+    msgBox.innerText = message;
+}
